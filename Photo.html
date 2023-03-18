@@ -1,0 +1,162 @@
+<!Doctype html>
+<html style="font-size:50%;">
+		<head>
+				<meta charset="utf-8">
+
+				<title>萬芳慈青社-照片牆</title>
+
+				<link rel="stylesheet" type="text/css" href="css/Header.css">
+
+				<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+				<style>
+						body{
+								height: 100vh;
+								margin: 0%;
+						}
+						.Layout{
+								height: auto;
+								width: 100%;
+						}
+						.List{
+								width: 90%;
+								height: 65vh;
+								margin: 5%;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+						}
+						.Picture{
+								width: 30%;
+								height: 97%;
+								margin: 0.5%;
+								float: left;
+								border: 2px solid #000;
+								text-align: center;
+								background: #eee8aa;
+						}
+						.Picture img{
+								margin-top: 10%;
+								height: auto;
+								width: 90%;
+						}
+
+						@media (max-width: 1100px),(max-height: 600px){
+								.List{
+										display: block;
+										height: 150vh;
+										margin-bottom: 10%;
+								}
+								.Picture{
+										float: none;
+										width: 95%;
+										height: 30%;
+										min-height: 100px;
+										margin-bottom: 10%;
+										margin-left: auto;
+										margin-right: auto;
+										max-width: 300px;
+								}
+								.Picture img{
+										max-width: 200px;
+								}
+						}
+
+						@media (max-height: 500px){
+								.List{
+										display: flex;
+										height: 65vh;
+								}
+								.Picture{
+										float: left;
+										width: 30%;
+										height: 97%;
+										margin-bottom: 0px;
+								}
+						}
+				</style>
+
+				<script type="text/javascript" src="javascript/Header.js"></script>
+		</head>
+		
+		<body>
+				<div class="Header">
+						<div class="Icon"></div>
+						<div class="Navbar">
+								<div class="Nav-link Nav-link-nonelook">
+										<a href="index.html">首頁</a>
+								</div>
+								<!--<div class="Nav-link Nav-link-nonelook">
+										<a href="#">訊息</p>
+								</div>-->
+								<div class="Nav-link Nav-link-look">
+										<a href="Photo.html">照片牆</a>
+								</div>
+								<div class="Nav-link Nav-link-nonelook">
+										<a href="ExternalLink.html">外部連結</a>
+								</div>
+								<div class="Nav-link Nav-link-nonelook">
+										<a href="AboutUs.html">關於我們</a>
+								</div>
+						</div>
+						<div class="Mobile-list-nonelook" id="Mobile-list-colick" onclick="MobileListColick()">
+						</div>
+				</div>
+				<div class="Mobile-navbar" id="Mobile-navbar" style="display:none;">
+						<div class="Mobile-nav-link">
+								<a href="index.html">首頁</a>
+						</div>
+						<!--<div class="Mobile-nav-link">
+								<a href="#">訊息</a>
+						</div>-->
+						<div class="Mobile-nav-link Nav-link-look">
+								<a href="Photo.html">照片牆</a>
+						</div>
+						<div class="Mobile-nav-link">
+								<a href="ExternalLink.html">外部連結</a>
+						</div>
+						<div class="Mobile-nav-link">
+								<a href="AboutUs.html">關於我們</a>
+						</div>
+				</div>
+
+				<div class="Layout">
+						<div class="List">
+								<div class="Picture">
+										<a href="./ViewImg.html?D2022_2_28">
+												<img src="img/Home_1.jpg"></img>
+										</a>
+								</div>
+								<div class="Picture">
+										<a href="./ViewImg.html?D2022_2_27">
+												<img src="svg/close.svg"></img>
+										</a>
+								</div>
+								<div class="Picture">
+										<a href="./ViewImg.html?D2022_2_28">
+												<img src="img/Home_1.jpg"></img>
+										</a>
+								</div>
+						</div>
+						<div class="List">
+								<div class="Picture">
+										<a href="./ViewImg.html?D2022_2_28">
+												<img src="img/Home_1.jpg"></img>
+										</a>
+								</div>
+								<div class="Picture">
+										<a href="./ViewImg.html?D2022_2_28">
+												<img src="img/Home_1.jpg"></img>
+										</a>
+								</div>
+								<div class="Picture">
+										<a href="./ViewImg.html?D2022_2_28">
+												<img src="img/Home_1.jpg"></img>
+										</a>
+								</div>
+						</div>
+
+				</div>
+
+		</body>
+</html>
